@@ -1,4 +1,4 @@
-# Dart‑Linux
+# Dart Linux
 
 **Minimal DIY Linux distribution, fully independent and systemd‑free**
 
