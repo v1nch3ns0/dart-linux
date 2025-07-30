@@ -9,5 +9,5 @@
 
 ## Project Overview
 
-Dart‑Linux is a minimalist Linux distribution built from scratch using Dart and shell tooling.  
+Dart‑Linux is a minimalist Linux distribution built from scratch.  
 The goal is to offer a practical, fully independent operating system—**without systemd**, focusing on simplicity, performance, and research potential.
