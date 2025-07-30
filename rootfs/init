@@ -1,0 +1,12 @@
+#!/bin/busybox-1.35.0-x86_64-linux-musl sh
+/bin/busybox-1.35.0-x86_64-linux-musl mount -t proc proc /proc
+/bin/busybox-1.35.0-x86_64-linux-musl mount -t sysfs sys /sys
+/bin/busybox-1.35.0-x86_64-linux-musl mount -t devtmpfs devtmpfs /dev
+/bin/busybox-1.35.0-x86_64-linux-musl mount -t tmpfs tmpfs /tmp
+[ ! -e /lib64 ] && /bin/busybox-1.35.0-x86_64-linux-musl ln -s /lib /lib64
+export PATH=/bin
+export LD_LIBRARY_PATH=/lib:/lib64
+export PS1="\[\033[0;32m\]> \[\033[0m\]"
+/bin/busybox-1.35.0-x86_64-linux-musl --install -s /bin
+hostname dart
+exec /bin/busybox-1.35.0-x86_64-linux-musl sh
